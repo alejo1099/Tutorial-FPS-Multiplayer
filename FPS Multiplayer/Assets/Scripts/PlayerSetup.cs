@@ -8,7 +8,8 @@ public class PlayerSetup : NetworkBehaviour
 
     private Camera sceneCamera;
 
-    private void Awake()
+    //Obligatorio en el Start para que funcione
+    private void Start()
     {
         if (!isLocalPlayer)
         {

@@ -11,12 +11,12 @@ public class PlayerController : MonoBehaviour
 
     private PlayerMotor motor;
 
-    void Awake()
+    private void Start()
     {
         motor = GetComponent<PlayerMotor>();
     }
 
-    void Update()
+    private void Update()
     {
         float xMov = Input.GetAxisRaw("Horizontal");
         float zMov = Input.GetAxisRaw("Vertical");
